@@ -1,9 +1,27 @@
 ##Patients
+This section will provide instruction for patients-related commands, such as adding a new patient, 
+or making modification to details of a specific patient.
+
+* [Command Summary](#command-summary)
 * [List](#list)
 * [Add](#add)
 * [Get](#get)
 * [Edit](#edit)
 * [Delete](#delete)
+
+[Return to main](/docs/UserGuide-Main.md)
+
+##Command Summary
+Command | Description
+---------------|---------------
+`list` | Display all the Patients in alphabetical order
+<code>add /ic\[NRIC] /n\[NAME] <br>/p\[PHONE_NUMBER] /d\[DOB] <br>/b\[BLOOD_TYPE] <br>\[Optional:  /a\[ALLERGIES] <br>/r\[REMARKS]]</code> | Add a new patient with the specified details.
+`get [nric]` | Retrieve details of the patient with the specified NRIC
+<code>edit NRIC \[Options]\[editedInput];</code> <br> <code>Options: </Code> <br> <code> -p edit phone number</code><br> <code> -a edit allergies</code> <br> <code> -r edit remarks</code>| Edit information of the patient with the specified NRIC
+`delete [nric]` | Deletes a patient with the specified NRIC
+
+[Back to top](#patients)
+
 ### List
 Display all the Patients in alphabetical order
 ##### Usage example:
@@ -16,6 +34,8 @@ list
 >         Alice | S8888888A 
 >         Bob   | S9999999Z   
 >         ===================================================    
+
+[Back to top](#patients)
 
 ### Add
 Add a new patient with the specified parameters in any order.
@@ -62,7 +82,9 @@ add /ic[NRIC] /n[NAME] /p[PHONE_NUMBER] /d[DOB] /b[BLOOD_TYPE]
 >         Allergies : NIL
 >         Remarks : NIL
 >       =====================================================
->
+
+[Back to top](#patients)
+
 ### Get
 Retrieve details of the patient with the specified NRIC
 ##### Usage example:
@@ -82,6 +104,8 @@ Retrieve details of the patient with the specified NRIC
 >             Remarks : Had contact with COVID-19 Case200
 >         ===================================================
 
+[Back to top](#patients)
+
 ### Edit
 Edit information of the patient with the specified NRIC
 ##### Usage example:
@@ -98,6 +122,8 @@ Options:
 ###### Example:
 > ***Expected output:***
 
+[Back to top](#patients)
+
 ### Delete
 Display all the Patients in alphabetical order
 ##### Usage example:
@@ -108,4 +134,4 @@ delete [nric]
 `delete S1234567A`
 > ***Expected output:***
 
-
+[Back to top](#patients)

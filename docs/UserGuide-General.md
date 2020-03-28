@@ -1,6 +1,17 @@
 ##General
+This section will provide the instruction for the general commands, 
+targeted for use to the program.
+* [Command Summary](#command-summary)
 * [Help](#help)
 * [Exit](#exit)
+
+[Return to main](/docs/UserGuide-Main.md)
+
+##Command Summary
+Command | Description
+---------------|---------------
+`help [optional: command]` | Display a help message with all commands or specific commands with usage examples
+`exit` | Saves the data to a text file and exits the program
 
 ### help
 Display a help message with all commands or specific commands with usage examples
@@ -9,12 +20,11 @@ Display a help message with all commands or specific commands with usage example
 ```
 help
 ```
-
 > ***Expected output:***
 >
 >     ===================================================
 >      HappyPills Commands:
->        add /ic[NRIC] /n[NAME] /p[PHONE_NUMBER] /d[DOB] /b[BLOOD_TYPE] /a[ALLERGIES] /r[REMARKS]
+>        add /ic[NRIC] /n[NAME] /p[PHONE_NUMBER] /d[DOB] /b[BLOOD_TYPE] [optional: /a[ALLERGIES] /r[REMARKS]]
 >        add /a[ALLERGIES]
 >        add /r[REMARKS]
 >        list 
@@ -46,9 +56,14 @@ help [Command]
 >     ===================================================
 >
 
+[Back to top](#general)
+
 ### Exit
 Saves the data to a text file and exits the program
 ##### Usage example:
 ```
 exit
 ```
+
+[Back to top](#general)
+

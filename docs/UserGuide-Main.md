@@ -10,11 +10,9 @@ Say *HELLO* to clutter-free desks, efficient patient management and legible medi
 ## Table of Contents
 * [Quick Start](#quick-start)
 * [Features](#features)
-* <Summary>Usage</Summary>
-
-    * [General](#general)
-        * [Help](#help)
-        * [Exit](#exit)
+* [Command Summary](#command-summary)
+* [Usage](#usage)
+    * [General](/docs/UserGuide-General.md)
     * [Patient](/docs/UserGuide-Patients.md)
     * [FAQ](#faq)
 ## Quick Start
@@ -26,22 +24,20 @@ Say *HELLO* to clutter-free desks, efficient patient management and legible medi
 1. Open Command Prompt in the directory where the JAR file is located.
 2. Run the command `java -jar happypills.jar`
 
-## Features
+##Features
+
+## Command Summary
 Command | Description
 ---------------|---------------
 `help [command]` | Display a help message with all commands or specific commands with usage examples
 `list` | Display all the Patients in alphabetical order
-<code>add /ic\[NRIC] /n\[NAME] <br>/p\[PHONE_NUMBER] /d\[DOB] <br>/b\[BLOOD_TYPE];</code> | Add a new patient with the specified details.
+<code>add /ic\[NRIC] /n\[NAME] <br>/p\[PHONE_NUMBER] /d\[DOB] <br>/b\[BLOOD_TYPE] <br>\[Optional:  /a\[ALLERGIES] <br>/r\[REMARKS]]</code> | Add a new patient with the specified details.
 `get [nric]` | Retrieve details of the patient with the specified NRIC
 <code>edit NRIC \[Options]\[editedInput];</code> <br> <code>Options: </Code> <br> <code> -p edit phone number</code><br> <code> -a edit allergies</code> <br> <code> -r edit remarks</code>| Edit information of the patient with the specified NRIC
 `delete [nric]` | Deletes a patient with the specified NRIC
 `exit` | Saves the data to a text file and exits the program
 
 ## FAQ
-
-
-
-## Command Summary
 
 
 
