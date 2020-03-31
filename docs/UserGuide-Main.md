@@ -8,7 +8,7 @@ By: `Team CS2113T-T12-2` Since `March 2020` License: `MIT`
     * [3.1. General Commands](#31-general-commands)
         + [3.1.1. View help: `help`](#311-view-help-help)
         + [3.1.2. Exit program: `exit`](#312-exit-program-exit)        
-    * [3.2. General Patient Information Commands](/docs/UserGuide-Patient.md) 
+    * [3.2. General Patient Information Commands](https://github.com/AY1920S2-CS2113T-T12-2/tp/docs/UserGuide-Patient.md) 
     * [3.3. Patient Medical Records Commands](/docs/UserGuide-Records.md)    
     * [3.4. Appointment Scheduling Commands](/docs/UserGuide-Appointment.md)
     * [3.5. Saving Data](#35-saving-data)
