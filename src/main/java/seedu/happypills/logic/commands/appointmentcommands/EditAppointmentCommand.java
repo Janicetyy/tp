@@ -208,7 +208,7 @@ public class EditAppointmentCommand extends AppointmentCommand {
         String field = newContent.substring(0,2).trim();
         Patient editPatient = findPatient(patients);
         if (editPatient == null) {
-            throw new HappyPillsException(PatientTextUi.patientNotFoundMessage);
+            throw new HappyPillsException(PatientTextUi.PATIENT_NOT_FOUND);
         }
         Appointment editAppt = findAppointment(appointments); //from the shared appointment map
         if (editAppt == null) {
@@ -233,7 +233,7 @@ public class EditAppointmentCommand extends AppointmentCommand {
                 Storage.writeAllToFile(Storage.APPOINTMENT_FILEPATH,
                         StorageTextUi.getFormattedApptString(appointments));
             } catch (IOException e) {
-                logger.info(StorageTextUi.failToWriteAppointmentMsg);
+                logger.info(StorageTextUi.FAIL_TO_WRITE_APPT);
             }
         }
         errorMsg = TextUi.appendDivider(errorMsg);

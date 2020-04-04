@@ -73,7 +73,7 @@ public class AddPatientCommand extends PatientCommand {
         try {
             Storage.addSingleItemToFile(Storage.PATIENT_FILEPATH, tempPatient.toSave());
         } catch (IOException e) {
-            logger.info(StorageTextUi.failToAddPatientMsg);
+            logger.info(StorageTextUi.FAIL_TO_ADD_PATIENT);
         }
         String message = "";
         message = PatientTextUi.addPatientSuccessMessage(patients.get(nric));

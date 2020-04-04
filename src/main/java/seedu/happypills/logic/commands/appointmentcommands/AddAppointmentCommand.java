@@ -53,7 +53,7 @@ public class AddAppointmentCommand extends AppointmentCommand {
     ) throws HappyPillsException {
         String message = "";
         if (!patients.containsKey(nric)) {
-            message = PatientTextUi.patientNotFoundMessage;
+            message = PatientTextUi.PATIENT_NOT_FOUND;
         } else {
             Appointment appointment = new Appointment(nric, reason, date, time);
             appointments.addAppointment(appointment);
@@ -62,7 +62,7 @@ public class AddAppointmentCommand extends AppointmentCommand {
             try {
                 Storage.addSingleItemToFile(Storage.APPOINTMENT_FILEPATH, appointment.toSave());
             } catch (IOException e) {
-                logger.warning(StorageTextUi.failToAddAppointmentMsg);
+                logger.warning(StorageTextUi.FAIL_TO_ADD_APPT);
             }
             message = AppointmentTextUi.addAppointmentSuccessMessage(appointment);
         }

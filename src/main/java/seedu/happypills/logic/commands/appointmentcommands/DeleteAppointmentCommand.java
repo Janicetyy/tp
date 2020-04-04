@@ -91,7 +91,7 @@ public class DeleteAppointmentCommand extends AppointmentCommand {
         String message = "";
         Patient delPatient = findPatient(patients);
         if (delPatient == null) {
-            message = PatientTextUi.patientNotFoundMessage;
+            message = PatientTextUi.PATIENT_NOT_FOUND;
             return TextUi.appendDivider(message);
         }
         Appointment delAppt = findAppointment(appointments);
@@ -106,7 +106,7 @@ public class DeleteAppointmentCommand extends AppointmentCommand {
                 Storage.writeAllToFile(Storage.APPOINTMENT_FILEPATH,
                         StorageTextUi.getFormattedApptString(appointments));
             } catch (IOException e) {
-                logger.info(StorageTextUi.failToWriteAppointmentMsg);
+                logger.info(StorageTextUi.FAIL_TO_WRITE_APPT);
             }
         } else {
             message = AppointmentTextUi.appointmentNotFoundMessage;

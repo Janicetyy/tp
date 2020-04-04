@@ -157,7 +157,7 @@ public class EditPatientCommand extends PatientCommand {
         Patient editPatient = findPatient(patients);
         String output = "";
         if (editPatient == null) {
-            throw new HappyPillsException(PatientTextUi.patientNotFoundMessage);
+            throw new HappyPillsException(PatientTextUi.PATIENT_NOT_FOUND);
         }
         if (content.isEmpty()) {
             throw new HappyPillsException("    Please do not leave the field as empty string");
@@ -196,7 +196,7 @@ public class EditPatientCommand extends PatientCommand {
             Storage.writeAllToFile(Storage.PATIENT_FILEPATH,
                     StorageTextUi.getFormattedPatientString(patients));
         } catch (IOException e) {
-            logger.info(StorageTextUi.failToWritePatientMsg);
+            logger.info(StorageTextUi.FAIL_TO_WRITE_PATIENT);
         }
         assert output.length() > 0 : "output message is invalid";
         return output;

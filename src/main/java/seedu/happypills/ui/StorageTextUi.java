@@ -9,10 +9,10 @@ import java.util.Map;
 
 public class StorageTextUi extends TextUi {
 
-    public static String failToAddPatientMsg = "Fail to add patient to file.";
-    public static String failToAddAppointmentMsg = "Fail to add appointment to file.";
-    public static String failToWritePatientMsg = "Failed to write patients to file.";
-    public static String failToWriteAppointmentMsg = "Failed to write patient's appointments to file.";
+    public static String FAIL_TO_ADD_PATIENT = "Fail to add patient to file.";
+    public static String FAIL_TO_ADD_APPT = "Fail to add appointment to file.";
+    public static String FAIL_TO_WRITE_PATIENT = "Failed to write patients to file.";
+    public static String FAIL_TO_WRITE_APPT = "Failed to write patient's appointments to file.";
 
     /**
      * returns a list of patients' name and their details.

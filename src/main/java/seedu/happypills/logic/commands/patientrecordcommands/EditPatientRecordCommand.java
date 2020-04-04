@@ -76,9 +76,9 @@ public class EditPatientRecordCommand extends PatientRecordCommand {
             throw new HappyPillsException(Messages.MESSAGE_PATIENT_RECORD_NOT_FOUND);
         }
         if (patientRecords.get(nric) == null) {
-            throw new HappyPillsException(PatientRecordTextUi.emptyPatientRecordMessage);
+            throw new HappyPillsException(PatientRecordTextUi.EMPTY_PATIENT_RECORD);
         } else if (patientRecords.get(nric).size() <= index) {
-            throw new HappyPillsException(PatientRecordTextUi.getEmptyPatientRecordList);
+            throw new HappyPillsException(PatientRecordTextUi.EMPTY_PATIENT_RECORD_LIST);
         }
         boolean output = false;
         String errorMsg = Messages.MESSAGE_EDIT_ERROR + TextUi.NEWLINE;
